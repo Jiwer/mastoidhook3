@@ -20,7 +20,7 @@ This isn't so much of a cheat, but more of a collection of exploits and tools.
 
 # Linux Compiling And Usage
 In order to load mastoidhook3.so into HOI4 you'll need to enter the following command into your terminal:
-LD_PRELOAD=/path/to/libfunchook.so.1.1.0:/path/to/mastoidhook3.so .path/to/hoi4 -steam
+LD_PRELOAD=/path/to/libfunchook.so.1.1.0:/path/to/mastoidhook3.so ./path/to/hoi4 -steam
 
 An example of this would be:
 LD_PRELOAD=/home/esther/mastoidhook3/libfunchook.so.1.1.0:/home/esther/mastoidhook3/mastoidhook3.so ./hoi4 -steam
