@@ -23,6 +23,7 @@ In order to load mastoidhook3.so into HOI4 you'll need to enter the following co
 LD_PRELOAD=/path/to/libfunchook.so.1.1.0:/path/to/mastoidhook3.so ./path/to/hoi4 -steam
 
 An example of this would be:
+
 LD_PRELOAD=/home/esther/mastoidhook3/libfunchook.so.1.1.0:/home/esther/mastoidhook3/mastoidhook3.so ./hoi4 -steam
 
 Assuming your terminal is already inside of the HOI4 folder and you placed both libfunchook.so.1.1.0 and mastoidhook3.so inside of /home/esther/mastoidhook3/
