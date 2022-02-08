@@ -36,4 +36,4 @@ g++ -fPIC -c main.cpp
 
 g++ -fPIC -shared -rdynamic -o mastoidhook3.so main.o -ldl
 
-The Linux version of this repository was my first time working with g++ and programming on Linux, so if there's anything that's wrong or I can correct, please submit an issue I WILL respond to it.
+The Linux version of this repository was my first time working with g++ and programming on Linux, so if there's anything that's wrong or I can correct, please submit an issue and I will respond to it.
