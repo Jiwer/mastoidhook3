@@ -28,8 +28,8 @@ LD_PRELOAD=/home/esther/mastoidhook3/libfunchook.so.1.1.0:/home/esther/mastoidho
 Assuming your terminal is already inside of the HOI4 folder and you placed both libfunchook.so.1.1.0 and mastoidhook3.so inside of /home/esther/mastoidhook3/
 
 In order to compile this you'll need to download and install funchook. After you've done that, use the following commands to compile:
-g++ -fPIC -c main.cpp
 
+g++ -fPIC -c main.cpp
 g++ -fPIC -shared -rdynamic -o mastoidhook3.so main.o -ldl
 
 # Windows Compiling And Usage
