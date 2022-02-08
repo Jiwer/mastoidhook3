@@ -12,7 +12,7 @@ This isn't so much of a cheat, but more of a collection of exploits and tools.
 
 3. Hide Steam Name. Hides your steam name in the lobby screen.
 
-4. DOS Host. Floods the host's game with packets through HOI4. This makes the host's network consume around 80mib/s if your cpu and upload speed is powerful enough to support that output.
+4. DOS Host. Floods the host's game with packets through HOI4. This makes the host's network consume around 80mib/s (up to 120mib/s) if your cpu and upload speed is powerful enough to support that output.
 
 5. Freeze Host. Freezes the host's game indefinitely. Works similar to DOS Host, however it's extremely unlikely that this feature would be able to take down a host's internet connection.
 
