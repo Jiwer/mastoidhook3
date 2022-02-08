@@ -29,6 +29,7 @@ Assuming your terminal is already inside of the HOI4 folder and you placed both 
 
 In order to compile this you'll need to download and install funchook. After you've done that, use the following commands to compile:
 g++ -fPIC -c main.cpp
+
 g++ -fPIC -shared -rdynamic -o mastoidhook3.so main.o -ldl
 
 # Windows Compiling And Usage
