@@ -1,5 +1,5 @@
 # mastoidhook3
-Internal Hearts Of Iron 4 Cheat For Linux & Windows. Uses https://github.com/kubo/funchook and https://github.com/ocornut/imgui.
+Internal Hearts Of Iron 4 Cheat For Linux & Windows. Uses https://github.com/kubo/funchook and https://github.com/ocornut/imgui
 
 ![alt text](https://i.imgur.com/ItcnC7g.png)
 
