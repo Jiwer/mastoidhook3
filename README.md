@@ -16,7 +16,7 @@ This isn't so much of a cheat, but more of a collection of exploits and tools.
 
 5. Freeze Host. Freezes the host's game indefinitely. Works similar to DOS Host, however it's extremely unlikely that this feature would be able to take down a host's internet connection.
 
-6. Unrestricted File Transfer. This feature only works as host. It looks for the specified file inside of your HOI4 save games folder and transfers it to all of the other players in the game. The received file is also deposited inside the target's save games folder. In order for this feature to work properly you need to attempt to load a .hoi4 save game through HOI4 one time (DO NOT USE THE UPLOAD BUTTON FOR THIS). Once you've done this you're good to use the upload button freely for the rest of the duration that you have HOI4 open.
+6. Unrestricted File Transfer. This feature only works as host. It looks for the specified file inside of your HOI4 save games folder and transfers it to all of the other players in the game. The received file is also deposited inside the target's save games folder. In order for this feature to work properly you need to first attempt to load a .hoi4 save game through HOI4 one time (DO NOT USE THE UPLOAD BUTTON FOR THIS). Once you've done this you're good to use the upload button freely with any file name and extension for the rest of the duration that you have HOI4 open.
 
 # Linux Compiling And Usage
 In order to load mastoidhook3.so into HOI4 you'll need to enter the following command into your terminal:
