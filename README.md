@@ -18,6 +18,9 @@ This isn't so much of a cheat, but more of a collection of exploits and tools.
 
 6. Unrestricted File Transfer. This feature only works as host. It looks for the specified file inside of your HOI4 save games folder and transfers it to all of the other players in the game. The received file is also deposited inside the target's save games folder. In order for this feature to work properly you need to first attempt to load a .hoi4 save game through HOI4 one time (DO NOT USE THE UPLOAD BUTTON FOR THIS). Once you've done this you're good to use the upload button freely with any file name and extension for the rest of the duration that you have HOI4 open.
 
+# Windows Compiling And Usage
+Coming soon.
+
 # Linux Compiling And Usage
 In order to load mastoidhook3.so into HOI4 you'll need to enter the following command into your terminal:
 LD_PRELOAD=/path/to/libfunchook.so.1.1.0:/path/to/mastoidhook3.so ./path/to/hoi4 -steam
@@ -33,5 +36,4 @@ g++ -fPIC -c main.cpp
 
 g++ -fPIC -shared -rdynamic -o mastoidhook3.so main.o -ldl
 
-# Windows Compiling And Usage
-Coming soon.
+The Linux version of this repository was my first time working with g++ and programming on Linux, so if there's anything that's wrong or I can correct, please submit an issue I WILL respond to it.
