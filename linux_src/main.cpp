@@ -4,8 +4,6 @@
 #include <SDL2/SDL.h>
 #include <unistd.h>
 #include <pthread.h>
-#include <sys/types.h>
-#include <sys/socket.h>
 #include "imgui/imgui.h"
 #include "imgui/imgui_impl_sdl.h"
 #include "imgui/imgui_impl_opengl3.h"
