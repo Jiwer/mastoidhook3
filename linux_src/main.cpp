@@ -4,6 +4,8 @@
 #include <SDL2/SDL.h>
 #include <unistd.h>
 #include <pthread.h>
+#include <sys/types.h>
+#include <sys/socket.h>
 #include "imgui/imgui.h"
 #include "imgui/imgui_impl_sdl.h"
 #include "imgui/imgui_impl_opengl3.h"
@@ -44,6 +46,9 @@ SDL_GL_SwapWindow_t o_SDL_GL_SwapWindow;
 
 typedef long long (*ImGui_ImplSDL2_NewFrame_t)(SDL_Window* window);
 ImGui_ImplSDL2_NewFrame_t o_ImGui_ImplSDL2_NewFrame;
+
+typedef ssize_t (*enet_socket_send_t)(int a1, long long a2, struct iovec *a3, size_t a4);
+enet_socket_send_t o_enet_socket_send;
 
 void* pCGameLobby;
 _ENetHost** LastENetHost;
@@ -228,7 +233,7 @@ void hk_SDL_GL_SwapWindow(SDL_Window* window)
 		{
 			bShouldFreeze = !bShouldFreeze;
 
-			fputs(bShouldDOS ? "[MastoidHook] freeze attack started\n" : "[MastoidHook] freeze attack stopped\n", stdout);
+			fputs(bShouldFreeze ? "[MastoidHook] freeze attack started\n" : "[MastoidHook] freeze attack stopped\n", stdout);
 		}
 
 		ImGui::Text("\nFile Transfer");
@@ -369,20 +374,12 @@ int __attribute__ ((constructor)) Mastoid_Main()
 	funchook_prepare(funchook, (void**)&o_SDL_GL_SwapWindow, (void*)hk_SDL_GL_SwapWindow);
 	funchook_install(funchook, 0);
 
-	for (int i = 0; i < UsableThreads; i++) 
+	pthread_create(&threads[1], NULL, &Mastoid_Input, NULL);
+	pthread_create(&threads[2], NULL, &Mastoid_DOSFreeze, NULL);
+
+	for (int i = 2; i < UsableThreads; i++) 
 	{
-		if (i == 1)
-		{
-			pthread_create(&threads[i], NULL, &Mastoid_Input, NULL);
-		}
-		else if (i == 2)
-		{
-			pthread_create(&threads[i], NULL, &Mastoid_DOSFreeze, NULL);
-		}
-		else
-		{
-			pthread_create(&threads[i], NULL, &Mastoid_DOS, NULL);
-		}
+		pthread_create(&threads[i], NULL, &Mastoid_DOS, NULL);
 	}
 
 	return 0;
