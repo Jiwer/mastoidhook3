@@ -47,9 +47,6 @@ SDL_GL_SwapWindow_t o_SDL_GL_SwapWindow;
 typedef long long (*ImGui_ImplSDL2_NewFrame_t)(SDL_Window* window);
 ImGui_ImplSDL2_NewFrame_t o_ImGui_ImplSDL2_NewFrame;
 
-typedef ssize_t (*enet_socket_send_t)(int a1, long long a2, struct iovec *a3, size_t a4);
-enet_socket_send_t o_enet_socket_send;
-
 void* pCGameLobby;
 _ENetHost** LastENetHost;
 CBlob* FirstData;
