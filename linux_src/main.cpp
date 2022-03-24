@@ -201,6 +201,7 @@ void hk_SDL_GL_SwapWindow(SDL_Window* window)
 	    SDL_GL_MakeCurrent(window, OriginalContext);
 	    ImGui_ImplSDL2_InitForOpenGL(window, OriginalContext);
 	    ImGui_ImplOpenGL3_Init("#version 150");
+	    init = true;
 	}
 
 	if (bMenuOpen)
@@ -252,8 +253,8 @@ void hk_SDL_GL_SwapWindow(SDL_Window* window)
 			}
 		}
 
-		ImGui::TextWrapped("\nI shouldn't have to tell you that DOSing/DDOSing is illegal. With that said though, it is extremely rare for any legal action to even be ATTEMPTED against someone that targets home networks only. Local law enforcement does not bother to investigate reports of someone's home network going offline for a few minutes because they don't have the resources to, nor do they care. It's only feasible for law enforement to protect corporations suffering from attacks lasting for extended periods of time.");
-
+		ImGui::TextWrapped("\nREDACTED");
+		
 	    ImGui::End();
 	    ImGui::Render();
 	    ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
