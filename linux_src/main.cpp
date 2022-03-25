@@ -253,7 +253,7 @@ void hk_SDL_GL_SwapWindow(SDL_Window* window)
 			}
 		}
 
-		ImGui::TextWrapped("\nREDACTED");
+		ImGui::TextWrapped("\n[CUT FROM RELEASE]");
 		
 	    ImGui::End();
 	    ImGui::Render();
